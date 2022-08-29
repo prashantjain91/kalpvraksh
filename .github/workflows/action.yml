@@ -1,0 +1,10 @@
+on:
+  push:
+    branches:
+      - base
+
+jobs:
+  print_hello:
+    runs-on: ubuntu-lates
+    steps:
+      - run: echo "Hello world From Local of everymedia"
