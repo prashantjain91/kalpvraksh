@@ -2,12 +2,12 @@ name: Merge any release branch to uat
 on:
   push:
     branches:
-      - 'base'
+      - 'frontend'
 jobs:
   merge-branch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@frontend
+      - uses: actions/checkout@master
 
       - name: Merge staging -> base
         uses: devmasx/merge-branch@master
